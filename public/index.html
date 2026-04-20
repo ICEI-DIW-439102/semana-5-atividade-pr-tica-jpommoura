@@ -1,12 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>NexTrip - Seu roteiro ideal</title>
+    <link rel="icon" href="NxT-Favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
-    
+    <header>
+        <div class="menu">
+            <a href="index.html" class="logo">
+                <img src="NxT-Logo.svg" alt="NexTrip Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="descubra.html">Descubra</a></li>
+                    <li><a href="roteiros.html">Roteiros</a></li>
+                    <li><a href="favoritos.html">Favoritos</a></li>
+                    <li class="profile">
+                        <button class="profile-btn">
+                            <img src="user-icon.svg" alt="Perfil"> 
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Seu roteiro ideal começa aqui</h1>
+            <form class="search-box">
+                <input type="text" class="search-text" placeholder="Para onde você deseja ir?">
+                <input type="date" class="search-date">
+                <button type="submit" class="search-btn">Buscar</button>
+                <button type="button" class="new-route-btn">Novo Roteiro</button>
+            </form>
+        </section>
+
+        <section class="destinos">
+            <h2>Sugestões para você</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <img src="https://picsum.photos/id/10/400/250" alt="Grécia" class="card-img-viva">
+                    <div class="card-info">
+                        <h3>Grécia</h3>
+                        <p>Explore o azul infinito do Mediterrâneo.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/id/13/400/250" alt="Montanhas" class="card-img-viva">
+                    <div class="card-info">
+                        <h3>Montanhas</h3>
+                        <p>O refúgio perfeito para quem busca paz.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/id/28/400/250" alt="Florestas" class="card-img-viva">
+                    <div class="card-info">
+                        <h3>Florestas</h3>
+                        <p>Conecte-se com a natureza selvagem.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/id/43/400/250" alt="Cidades Históricas" class="card-img-viva">
+                    <div class="card-info">
+                        <h3>Cidades Históricas</h3>
+                        <p>Caminhe por séculos de história viva.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="vermais">
+                <button class="vermais-btn">Ver mais</button>
+            </div>
+        </section>
+
+        <section class="emalta">
+            <h2>Roteiros em alta</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <span class="card-badge">Destaque</span>
+                    <img src="https://picsum.photos/id/15/400/250" alt="Minas" class="card-img-viva">
+                    <div class="card-info">
+                        <h3>Cachoeiras de Minas</h3>
+                        <p>A calmaria que você precisa para o fim de semana.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/id/16/400/250" alt="Jalapão" class="card-img-viva">
+                    <div class="card-info">
+                        <h3>Pôr do Sol no Jalapão</h3>
+                        <p>Um espetáculo de cores no coração do Brasil.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/id/22/400/250" alt="Alpes" class="card-img-viva">
+                    <div class="card-info">
+                        <h3>Alpes Suíços</h3>
+                        <p>Aventura e neve para amantes de esportes.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/id/54/400/250" alt="Paris" class="card-img-viva">
+                    <div class="card-info">
+                        <h3>Paris Noturna</h3>
+                        <p>A cidade luz vista sob um novo ângulo.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="vermais">
+                <button class="vermais-btn">Ver mais</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <h3>NexTrip</h3>
+            <p class="frase-efeito">Seu roteiro ideal começa aqui.</p>
+            <p class="copyright">&copy; 2026 NexTrip. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
